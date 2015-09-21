@@ -17,7 +17,7 @@ public:
 
 void TicTacToe::newTurn(char board[], int player){
 	int space;
-	char test;
+	//char test;
 	char token;
 	//assign token
 	if (player == PLAYER1){
@@ -35,7 +35,7 @@ void TicTacToe::newTurn(char board[], int player){
 	while (board[space-1] == 'O' || board[space-1] == 'X' || space > NUMSQUARES || space < 0){
 		std::cout << "Sorry, that number is not valid. Please enter an available number from 1-9: ";
 		std::cin >> space; 
-		test = space;
+		//test = space;
 	}
 	board[space - 1] = token;
 }
